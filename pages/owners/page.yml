@@ -1,0 +1,27 @@
+id: '16390725002880.5066786927321221'
+name: Owners
+url: owners
+parentPageId: ''
+slots:
+  - id: '16390725002890.5832259983713053'
+    name: content
+    children:
+      - id: '16390725002890.8028923093546518'
+        definitionId: grid
+        parentSlotId: '16390725002890.5832259983713053'
+        styles: {}
+        properties:
+          name: owners
+          pageTitle: '{{app.name}} - {{activeRoute.name}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots:
+          - id: '16390725002890.9331515683574878'
+            name: content
+            children:
+              - components/button4.yml
+              - components/button5.yml
+              - components/button6.yml
+              - components/publicOwnersTable.yml

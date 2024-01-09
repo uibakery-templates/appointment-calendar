@@ -1,0 +1,55 @@
+id: '16390734299070.014999919030999065'
+name: loadPublicowners
+nameConfigured: true
+steps:
+  - id: '16390734317120.8594147782334267'
+    type: LOAD_COLLECTION
+    params:
+      - type: datasourceId
+        value: OxF9MAaT3J
+        valueType: string
+      - type: resourceId
+        value: f0276176-b2f1-4f79-b2cf-d5e3184b40e8
+        valueType: string
+      - type: filters
+        value: []
+        valueType: custom
+      - type: ordering
+        value:
+          limit:
+            value: ''
+          offset:
+            value: ''
+          orderBy:
+            value: ''
+          orderDirection:
+            value: asc
+        valueType: custom
+      - type: additionalParams
+        value:
+          - name: ''
+            value: ''
+        valueType: custom
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: true
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: true
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadPublicowners.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.loadPublicowners.name}}" successfully executed
+  showErrorToast: false
+  errorToast: Action "{{actions.loadPublicowners.name}}" has failed
+  delay: '0'
+  runWhenFirstReferenced: true
+kind: workflow

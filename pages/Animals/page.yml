@@ -1,0 +1,27 @@
+id: '16390725073610.004459523135664334'
+name: Animals
+url: Animals
+parentPageId: ''
+slots:
+  - id: '16390725073610.5057673025309868'
+    name: content
+    children:
+      - id: '16390725073610.7940618149484047'
+        definitionId: grid
+        parentSlotId: '16390725073610.5057673025309868'
+        styles: {}
+        properties:
+          name: Animals
+          pageTitle: '{{app.name}} - {{activeRoute.name}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots:
+          - id: '16390725073610.46623900411396235'
+            name: content
+            children:
+              - components/button7.yml
+              - components/button8.yml
+              - components/button9.yml
+              - components/publicAnimalsTable.yml

@@ -1,0 +1,14 @@
+storeItemList: []
+metadata:
+  favicon: ''
+  code: ''
+  title: Admin panel
+  description: ''
+  breakpoints: []
+appSettings:
+  properties:
+    defaultData: '{}'
+  actions: {}
+  gridVersion: 2
+  density: compact
+internalType: project

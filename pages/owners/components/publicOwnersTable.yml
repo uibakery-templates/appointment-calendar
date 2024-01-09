@@ -1,0 +1,317 @@
+id: '16390734433860.7626029852665441'
+definitionId: smartTable
+parentSlotId: '16390725002890.9331515683574878'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 9
+      w: 24
+      h: 175
+properties:
+  data: '{{actions.loadPublicowners.data}}'
+  name: publicOwnersTable
+  title: Owners
+  showLoading:
+    withData: true
+    dataValue: '{{actions.loadPublicowners.loading}}'
+    value: false
+  limit: '12'
+  showFilter: true
+  showAddAction:
+    value: false
+    dataValue: 'false'
+    withData: false
+  showEditAction:
+    value: false
+    dataValue: 'false'
+    withData: false
+  showBulkEditAction:
+    value: false
+    dataValue: 'false'
+    withData: false
+  showDeleteAction:
+    value: false
+    dataValue: 'false'
+    withData: false
+  triggerRowSelectOnInit:
+    value: true
+    dataValue: 'false'
+    withData: false
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  selectRowOnEditButtonClick:
+    value: false
+    dataValue: 'false'
+    withData: false
+actions: {}
+index: 3
+slots:
+  - id: '16390734433860.15160768535585767'
+    name: columns
+    children:
+      - id: '16390734434190.21358678083972782'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber3
+          prop: id
+          primaryKey: false
+          width: 90
+          filter: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          filterVariation:
+            value: range
+            dataValue: range
+            withData: false
+        parentSlotId: '16390734433860.15160768535585767'
+        index: 0
+        slots: []
+      - id: '16390734434200.3645704845769189'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString
+          prop: first_name
+          primaryKey: false
+          width: 150
+          filter: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16390734433860.15160768535585767'
+        index: 2
+        slots: []
+      - id: '16390734434200.8966991372722413'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString6
+          prop: last_name
+          primaryKey: false
+          width: 150
+          filter: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16390734433860.15160768535585767'
+        index: 3
+        slots: []
+      - id: '16390734434200.24490303100132493'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString7
+          prop: full_name
+          primaryKey: false
+          width: 150
+          filter: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16390734433860.15160768535585767'
+        index: 5
+        slots: []
+      - id: '16390734434200.9962896277199873'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString8
+          prop: job_title
+          primaryKey: false
+          width: 150
+          filter: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16390734433860.15160768535585767'
+        index: 6
+        slots: []
+      - id: '16390734434200.9125733562453457'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString9
+          prop: job_type
+          primaryKey: false
+          width: 150
+          filter: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16390734433860.15160768535585767'
+        index: 7
+        slots: []
+      - id: '16390734434200.35719422152693836'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString10
+          prop: phone
+          primaryKey: false
+          width: 150
+          filter: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16390734433860.15160768535585767'
+        index: 8
+        slots: []
+      - id: '16390734434200.45855173820109574'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString11
+          prop: email
+          primaryKey: false
+          width: 150
+          filter: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16390734433860.15160768535585767'
+        index: 9
+        slots: []
+      - id: '16390734434200.936189050954473'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString14
+          prop: city
+          primaryKey: false
+          width: 150
+          filter: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16390734433860.15160768535585767'
+        index: 10
+        slots: []
+      - id: '16390734434200.5272005750168245'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicNumber4
+          prop: onboarding_completion
+          primaryKey: false
+          width: 90
+          filter: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          filterVariation:
+            value: range
+            dataValue: range
+            withData: false
+        parentSlotId: '16390734433860.15160768535585767'
+        index: 11
+        slots: []
+      - id: '16390734434200.5262863229292329'
+        definitionId: atomicImage
+        parentSlotId: '16390734433860.15160768535585767'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicImage3
+          prop: image
+          primaryKey: false
+          filter: true
+          width: '100'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 1
+        slots: []
+      - id: '16390734434200.6222558527174995'
+        definitionId: atomicSelect
+        parentSlotId: '16390734433860.15160768535585767'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicSelect2
+          prop: country
+          primaryKey: false
+          filter: true
+          width: 150
+          options:
+            value:
+              - value: Cambridgeshire
+                color: primary
+                __UIBAKERY__SYSTEM_ID__: '16390735047320.20057445050582778'
+              - value: Berkshire
+                color: success
+                __UIBAKERY__SYSTEM_ID__: '16390735047320.5107902110132507'
+              - value: Borders
+                color: warning
+                __UIBAKERY__SYSTEM_ID__: '16390735047320.5379950069503805'
+              - value: Buckinghamshire
+                color: danger
+                __UIBAKERY__SYSTEM_ID__: '16390735047330.6646890199338393'
+              - value: Avon
+                color: info
+                __UIBAKERY__SYSTEM_ID__: '16390735047330.9183547238542307'
+              - value: Bedfordshire
+                color: basic
+                __UIBAKERY__SYSTEM_ID__: '16390735047330.7785746484893215'
+            dataValue: |-
+              [
+                {
+                  value: 'Cambridgeshire',
+                  color: 'primary'
+                },
+                {
+                  value: 'Berkshire',
+                  color: 'success'
+                },
+                {
+                  value: 'Borders',
+                  color: 'warning'
+                },
+                {
+                  value: 'Buckinghamshire',
+                  color: 'danger'
+                },
+                {
+                  value: 'Avon',
+                  color: 'info'
+                },
+                {
+                  value: 'Bedfordshire',
+                  color: 'basic'
+                }
+              ]
+            withData: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          allowResetValue:
+            value: false
+            dataValue: 'false'
+            withData: false
+        index: 4
+        slots: []

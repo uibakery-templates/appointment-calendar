@@ -1,0 +1,27 @@
+id: '16390691472230.9001792344113559'
+definitionId: customComponent
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 9
+      w: 18
+      h: 180
+properties:
+  data: '{ events: {{ actions.loadAppointments.data }} }'
+  template: "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css\"> \n<script src=\"https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js\"></script>\n\n<div class=\"container\">\n  <div id=\"calendar\"></div>\n</div>\n\n<style>\n   body, html {\n     height: 100%;\n     padding: 0;\n     margin: 0;\n     font: 14px Inter, sans-serif;\n   }\n\n  .container {\n    background: white;\n    padding: 2rem;\n    height: 100%;\n    overflow: hidden;\n    border-radius: 0.25rem;\n    border: 0.0625rem solid #dde1eb;\n    box-shadow: 0 0.5rem 1rem 0 rgb(44 51 73 / 10%);\n  }\n\n  .fc-daygrid-event-harness {\n    cursor: pointer;\n  }\n</style>\n\n<script>\n  document.addEventListener('DOMContentLoaded', function() {\n    var calendarEl = document.getElementById('calendar');\n  \tvar calendar = new FullCalendar.Calendar(calendarEl, {\n      initialView: 'dayGridMonth',\n      eventClick: (info) => {\n        UB.updateValue({ id: info.event.id });\n        UB.triggerEvent({ id: info.event.id });\n      }\n    });\n    calendar.render();\n    UB.onData(data => {\n      calendar.removeAllEvents();\n      const events = data && data.events ? data.events : [];\n      console.log(events);\n      if (events && events[0]) {\n        console.log(events[0]);\n        UB.updateValue({ id: events[0].id });\n        UB.triggerEvent({ id: events[0].id });\n      }\n      events.forEach(event => {\n        calendar.addEvent(event);\n      });\n    });\n  });\n</script>"
+  name: calendarCmp
+  showLoading:
+    value: false
+    dataValue: '{{actions.loadAppointments.loading}}'
+    withData: true
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+index: 0
+actions:
+  triggerEvent:
+    - action: '16390712377000.11149376097277952'
+      paramCode: ''
+slots: []

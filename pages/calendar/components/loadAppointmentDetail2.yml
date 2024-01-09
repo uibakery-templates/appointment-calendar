@@ -1,0 +1,89 @@
+id: '16390723114230.7114351220831991'
+definitionId: detail
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 18
+      y: 124
+      w: 6
+      h: 65
+properties:
+  entity: '{{ actions.loadAppointment.data.animal }}'
+  name: loadAppointmentDetail2
+  title: Animal
+  columns: '2'
+  showLoading:
+    value: false
+    dataValue: '{{actions.loadAppointment.loading}}'
+    withData: true
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+actions: {}
+index: 3
+slots:
+  - id: '16390723114230.05710950495548883'
+    name: structure
+    children:
+      - id: '16390723114230.6239709771910655'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString5
+          prop: name
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16390723114230.05710950495548883'
+        index: 1
+        slots: []
+      - id: '16390723114230.1231400426625473'
+        definitionId: atomicImage
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicImage2
+          prop: image
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16390723114230.05710950495548883'
+        index: 0
+        slots: []
+      - id: '16390723114230.5950183486328833'
+        definitionId: atomicSelect
+        parentSlotId: '16390723114230.05710950495548883'
+        styles: {}
+        properties:
+          name: atomicSelect
+          prop: type
+          options:
+            value: []
+            dataValue: '[]'
+            withData: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          allowResetValue:
+            value: false
+            dataValue: 'false'
+            withData: false
+        index: 2
+        slots: []
+      - id: '16390723870130.5722172674138193'
+        definitionId: atomicNumber
+        parentSlotId: '16390723114230.05710950495548883'
+        styles: {}
+        properties:
+          name: atomicNumber2
+          prop: age
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 3
+        slots: []

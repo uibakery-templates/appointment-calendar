@@ -1,0 +1,192 @@
+id: '16390735520820.8714885238284718'
+definitionId: smartTable
+parentSlotId: '16390725073610.46623900411396235'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 9
+      w: 24
+      h: 175
+properties:
+  data: '{{actions.loadPublicowners2.data}}'
+  name: publicAnimalsTable
+  title: Public / animals
+  showLoading:
+    withData: true
+    dataValue: '{{actions.loadPublicowners2.loading}}'
+    value: false
+  limit: '12'
+  showFilter: true
+  showAddAction:
+    value: false
+    dataValue: 'false'
+    withData: false
+  showEditAction:
+    value: false
+    dataValue: 'false'
+    withData: false
+  showBulkEditAction:
+    value: false
+    dataValue: 'false'
+    withData: false
+  showDeleteAction:
+    value: false
+    dataValue: 'false'
+    withData: false
+  triggerRowSelectOnInit:
+    value: true
+    dataValue: 'false'
+    withData: false
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  selectRowOnEditButtonClick:
+    value: false
+    dataValue: 'false'
+    withData: false
+actions: {}
+index: 3
+slots:
+  - id: '16390735520820.46825761913513664'
+    name: columns
+    children:
+      - id: '16390735521170.38552118863102547'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber5
+          prop: id
+          primaryKey: false
+          width: 90
+          filter: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          filterVariation:
+            value: range
+            dataValue: range
+            withData: false
+        parentSlotId: '16390735520820.46825761913513664'
+        index: 0
+        slots: []
+      - id: '16390735521170.14889865257310797'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString12
+          prop: name
+          primaryKey: false
+          width: 150
+          filter: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16390735520820.46825761913513664'
+        index: 2
+        slots: []
+      - id: '16390735521170.3482535022935378'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString13
+          prop: type
+          primaryKey: false
+          width: 150
+          filter: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16390735520820.46825761913513664'
+        index: 3
+        slots: []
+      - id: '16390735521170.26132586499331767'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber6
+          prop: age
+          primaryKey: false
+          width: 90
+          filter: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          filterVariation:
+            value: range
+            dataValue: range
+            withData: false
+        parentSlotId: '16390735520820.46825761913513664'
+        index: 4
+        slots: []
+      - id: '16390735521170.15395095788743007'
+        definitionId: atomicDateTime
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicDateTime2
+          prop: registered_at
+          primaryKey: false
+          timeFormat:
+            value: ''
+            dataValue: HH:mm
+            withData: false
+          width: 150
+          filter: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          filterVariation:
+            value: range
+            dataValue: range
+            withData: false
+        parentSlotId: '16390735520820.46825761913513664'
+        index: 5
+        slots: []
+      - id: '16390735521180.6486109781633782'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber7
+          prop: owner_id
+          primaryKey: false
+          width: 90
+          filter: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          filterVariation:
+            value: range
+            dataValue: range
+            withData: false
+        parentSlotId: '16390735520820.46825761913513664'
+        index: 6
+        slots: []
+      - id: '16390735521180.7378941594679949'
+        definitionId: atomicImage
+        parentSlotId: '16390735520820.46825761913513664'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicImage4
+          prop: image
+          primaryKey: false
+          filter: true
+          width: '50'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 1
+        slots: []

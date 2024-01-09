@@ -1,0 +1,23 @@
+id: '16390724502140.33987734066389796'
+definitionId: button
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 3
+      y: 0
+      w: 3
+      h: 9
+properties:
+  name: button
+  text: Owners
+  linkInfo:
+    active: internalPath
+    internalPath: '{{routes.owners.url}}'
+    externalPath: ''
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+actions: {}
+index: 4
+slots: []

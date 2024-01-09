@@ -1,0 +1,81 @@
+id: '16390712377000.11149376097277952'
+name: loadAppointment
+nameConfigured: true
+steps:
+  - id: '16390717085190.6646759254354395'
+    type: condition
+    params:
+      - type: code
+        value: ./16390717085190.6646759254354395.js
+        valueType: interpolatedValue
+      - type: steps
+        value:
+          - condition: true
+            steps:
+              - id: '16390717363790.4577416819309996'
+                type: LOAD_ENTITY
+                params:
+                  - type: datasourceId
+                    value: OxF9MAaT3J
+                    valueType: string
+                  - type: resourceId
+                    value: afa95613-698d-4f6c-9dce-cacc19540599
+                    valueType: string
+                  - type: filters
+                    value:
+                      - column: id
+                        operation: '='
+                        value:
+                          value: '{{ ui.calendarCmp.value?.id }}'
+                    valueType: string
+                  - type: successMapper
+                    value: ''
+                    valueType: interpolatedValue
+                  - type: failureMapper
+                    value: ''
+                    valueType: interpolatedValue
+                  - type: mapperEnabled
+                    value: true
+                    valueType: custom
+                level: 1
+                fallthroughError: false
+                isChanged: true
+              - id: '16390718299410.4459397602029491'
+                type: customAsyncCode
+                params:
+                  - type: asyncCode
+                    value: ./16390718299410.4459397602029491.js
+                    valueType: interpolatedValue
+                level: 1
+                fallthroughError: false
+                isChanged: true
+          - condition: false
+            steps:
+              - id: '16390717154500.6680304244701181'
+                type: customAsyncCode
+                params:
+                  - type: asyncCode
+                    value: ./16390717154500.6680304244701181.js
+                    valueType: interpolatedValue
+                level: 1
+                fallthroughError: false
+                isChanged: true
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: false
+assigned: true
+selected: true
+order: 3
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadAppointment.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.loadAppointment.name}}" successfully executed
+  showErrorToast: false
+  errorToast: Action "{{actions.loadAppointment.name}}" has failed
+  delay: '0'
+  runWhenFirstReferenced: true
+mode: manual
+kind: workflow

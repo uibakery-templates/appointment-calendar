@@ -1,0 +1,67 @@
+id: '16390721659450.6104346912030039'
+definitionId: detail
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 18
+      y: 59
+      w: 6
+      h: 65
+properties:
+  entity: '{{ actions.loadAppointment.data.owner }}'
+  name: loadAppointmentDetail
+  title: Owner
+  columns: '2'
+  showLoading:
+    value: false
+    dataValue: '{{actions.loadAppointment.loading}}'
+    withData: true
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+actions: {}
+index: 2
+slots:
+  - id: '16390721659450.4950664677489127'
+    name: structure
+    children:
+      - id: '16390721728650.7939036866079978'
+        definitionId: atomicString
+        parentSlotId: '16390721659450.4950664677489127'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString2
+          prop: full_name
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots: []
+      - id: '16390722254540.1305160324142165'
+        definitionId: atomicString
+        parentSlotId: '16390721659450.4950664677489127'
+        styles: {}
+        properties:
+          name: atomicString4
+          prop: phone
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 1
+        slots: []
+      - id: '16390723717220.40479884861487103'
+        definitionId: atomicNumber
+        parentSlotId: '16390721659450.4950664677489127'
+        styles: {}
+        properties:
+          name: atomicNumber
+          prop: age
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 2
+        slots: []

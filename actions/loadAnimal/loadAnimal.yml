@@ -1,0 +1,46 @@
+id: '16390719602180.7468853968280478'
+name: loadAnimal
+nameConfigured: true
+steps:
+  - id: '16390719602180.10807198523297012'
+    type: LOAD_ENTITY
+    params:
+      - type: datasourceId
+        value: OxF9MAaT3J
+        valueType: string
+      - type: resourceId
+        value: b313f681-2c5b-4f99-8c42-88235e08c523
+        valueType: string
+      - type: filters
+        value:
+          - column: id
+            operation: '='
+            value:
+              value: '{{ data.id }}'
+        valueType: string
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: true
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: true
+assigned: false
+order: 2
+selected: true
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadAnimal.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.loadAnimal.name}}" successfully executed
+  showErrorToast: false
+  errorToast: Action "{{actions.loadAnimal.name}}" has failed
+  delay: '0'
+  runWhenFirstReferenced: true
+kind: workflow

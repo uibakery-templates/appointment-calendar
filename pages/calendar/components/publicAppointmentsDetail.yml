@@ -1,0 +1,71 @@
+id: '16390709424110.8145307180540351'
+definitionId: detail
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 18
+      y: 9
+      w: 6
+      h: 50
+properties:
+  entity: '{{ actions.loadAppointment.data.appointment }}'
+  name: publicAppointmentsDetail
+  title: Appointment
+  columns: '2'
+  showLoading:
+    value: false
+    dataValue: '{{actions.loadAppointment.loading}}'
+    withData: true
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+actions: {}
+index: 1
+slots:
+  - id: '16390709424110.44628477542767553'
+    name: structure
+    children:
+      - id: '16390709424300.16076919786187305'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString3
+          prop: details
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16390709424110.44628477542767553'
+        index: 0
+        slots: []
+      - id: '16390709424300.5764674623791066'
+        definitionId: atomicBoolean
+        parentSlotId: '16390709424110.44628477542767553'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicBoolean
+          prop: confirmed
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 2
+        slots: []
+      - id: '16390709424300.538973998294427'
+        definitionId: atomicDateTime
+        parentSlotId: '16390709424110.44628477542767553'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicDateTime
+          prop: appointment_date
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 1
+        slots: []

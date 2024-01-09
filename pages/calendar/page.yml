@@ -1,0 +1,32 @@
+id: '1'
+name: Calendar
+url: calendar
+slots:
+  - id: '1'
+    name: content
+    bindings: {}
+    children:
+      - id: '1'
+        definitionId: grid
+        parentSlotId: '1'
+        index: 0
+        styles: {}
+        properties:
+          name: grid
+          pageTitle: '{{app.name}} - {{activeRoute.name}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        actions: {}
+        slots:
+          - id: '2'
+            name: content
+            bindings: {}
+            children:
+              - components/calendarCmp.yml
+              - components/publicAppointmentsDetail.yml
+              - components/loadAppointmentDetail.yml
+              - components/loadAppointmentDetail2.yml
+              - components/button.yml
+              - components/button2.yml
+              - components/button3.yml

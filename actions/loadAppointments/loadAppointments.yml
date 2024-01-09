@@ -1,0 +1,68 @@
+id: '16390690340100.7883776901617443'
+name: loadAppointments
+nameConfigured: true
+steps:
+  - id: '16390690361410.0863689029213921'
+    type: LOAD_COLLECTION
+    params:
+      - type: datasourceId
+        value: OxF9MAaT3J
+        valueType: string
+      - type: resourceId
+        value: afa95613-698d-4f6c-9dce-cacc19540599
+        valueType: string
+      - type: filters
+        value: []
+        valueType: custom
+      - type: ordering
+        value:
+          limit:
+            value: '50'
+          offset:
+            value: ''
+          orderBy:
+            value: ''
+          orderDirection:
+            value: asc
+        valueType: custom
+      - type: additionalParams
+        value:
+          - name: ''
+            value: ''
+        valueType: custom
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: true
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+  - id: '16390699907470.11447645781508631'
+    type: customAsyncCode
+    params:
+      - type: asyncCode
+        value: ./16390699907470.11447645781508631.js
+        valueType: interpolatedValue
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: false
+assigned: false
+selected: true
+order: 0
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadAppointments.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.loadAppointments.name}}" successfully executed
+  showErrorToast: false
+  errorToast: Action "{{actions.loadAppointments.name}}" has failed
+  delay: '0'
+  runWhenFirstReferenced: true
+mode: manual
+kind: workflow
