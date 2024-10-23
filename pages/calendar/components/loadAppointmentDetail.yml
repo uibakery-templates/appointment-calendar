@@ -39,6 +39,11 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         index: 0
         slots: []
       - id: '16390722254540.1305160324142165'
@@ -51,6 +56,11 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         index: 1
         slots: []
       - id: '16390723717220.40479884861487103'
@@ -63,5 +73,10 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         index: 2
         slots: []

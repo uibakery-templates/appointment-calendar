@@ -38,6 +38,11 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         parentSlotId: '16390709424110.44628477542767553'
         index: 0
         slots: []
@@ -53,6 +58,15 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          controlType:
+            value: toggle
+            dataValue: toggle
+            withData: false
+          forceEditSubmitTriggers:
+            - change
+          labelConfig:
+            position: vertical
+            align: left
         index: 2
         slots: []
       - id: '16390709424300.538973998294427'
@@ -67,5 +81,10 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceEditSubmitTriggers:
+            - confirm
+          labelConfig:
+            align: left
+            position: vertical
         index: 1
         slots: []
