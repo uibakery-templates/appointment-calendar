@@ -17,7 +17,6 @@ properties:
     dataValue: '{{actions.loadPublicowners.loading}}'
     value: false
   limit: '12'
-  showFilter: true
   showAddAction:
     value: false
     dataValue: 'false'
@@ -45,6 +44,16 @@ properties:
     value: false
     dataValue: 'false'
     withData: false
+  rowHeight: dynamic
+  showFilter:
+    withData: false
+    dataValue: 'false'
+    value: true
+  showAddButtonSettings:
+    value: true
+    dataValue: 'true'
+    withData: false
+  addActionPlacement: inline
 actions: {}
 index: 3
 slots:
@@ -69,6 +78,11 @@ slots:
             value: range
             dataValue: range
             withData: false
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         parentSlotId: '16390734433860.15160768535585767'
         index: 0
         slots: []
@@ -86,6 +100,11 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         parentSlotId: '16390734433860.15160768535585767'
         index: 2
         slots: []
@@ -103,6 +122,11 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         parentSlotId: '16390734433860.15160768535585767'
         index: 3
         slots: []
@@ -120,6 +144,11 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         parentSlotId: '16390734433860.15160768535585767'
         index: 5
         slots: []
@@ -137,6 +166,11 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         parentSlotId: '16390734433860.15160768535585767'
         index: 6
         slots: []
@@ -154,6 +188,11 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         parentSlotId: '16390734433860.15160768535585767'
         index: 7
         slots: []
@@ -171,6 +210,11 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         parentSlotId: '16390734433860.15160768535585767'
         index: 8
         slots: []
@@ -188,6 +232,11 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         parentSlotId: '16390734433860.15160768535585767'
         index: 9
         slots: []
@@ -205,6 +254,11 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         parentSlotId: '16390734433860.15160768535585767'
         index: 10
         slots: []
@@ -226,6 +280,11 @@ slots:
             value: range
             dataValue: range
             withData: false
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         parentSlotId: '16390734433860.15160768535585767'
         index: 11
         slots: []
@@ -244,6 +303,12 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceEditSubmitTriggers:
+            - enter
+            - confirm
+          labelConfig:
+            align: left
+            position: vertical
         index: 1
         slots: []
       - id: '16390734434200.6222558527174995'
@@ -313,5 +378,10 @@ slots:
             value: false
             dataValue: 'false'
             withData: false
+          forceEditSubmitTriggers:
+            - change
+          labelConfig:
+            align: left
+            position: vertical
         index: 4
         slots: []

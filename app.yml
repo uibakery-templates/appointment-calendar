@@ -1,10 +1,10 @@
-storeItemList: []
 metadata:
   favicon: ''
-  code: ''
   title: Admin panel
   description: ''
   breakpoints: []
+  rendererCachingEnabled: false
+  skipDepsComparisonInCompilerCache: false
 appSettings:
   properties:
     defaultData: '{}'

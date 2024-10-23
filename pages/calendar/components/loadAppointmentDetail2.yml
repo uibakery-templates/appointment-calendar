@@ -38,6 +38,11 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         parentSlotId: '16390723114230.05710950495548883'
         index: 1
         slots: []
@@ -45,13 +50,19 @@ slots:
         definitionId: atomicImage
         styles:
           xl:
-            visible: true
+            visible: false
         properties:
           name: atomicImage2
           prop: image
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceEditSubmitTriggers:
+            - enter
+            - confirm
+          labelConfig:
+            align: left
+            position: vertical
         parentSlotId: '16390723114230.05710950495548883'
         index: 0
         slots: []
@@ -73,6 +84,11 @@ slots:
             value: false
             dataValue: 'false'
             withData: false
+          forceEditSubmitTriggers:
+            - change
+          labelConfig:
+            align: left
+            position: vertical
         index: 2
         slots: []
       - id: '16390723870130.5722172674138193'
@@ -85,5 +101,10 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceEditSubmitTriggers:
+            - enter
+          labelConfig:
+            align: left
+            position: vertical
         index: 3
         slots: []
